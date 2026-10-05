@@ -1,123 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio | Jadison</title>
 </head>
-
 <body>
-
     <div class="particulas"></div>
-
     <nav class="navegacao">
         <ul class="menu">
             <li>
-                <a href="#inicio" class="menu-link">Inicio</a>
+                <a href="#inicio" class="menu-link">
+                    Inicio
+                </a>
             </li>
             <li>
-                <a href="#sobre" class="menu-link">Sobre</a>
+                <a href="#sobre" class="menu-link">
+                    Sobre
+                </a>
             </li>
             <li>
-                <a href="#projetos" class="menu-link">Projetos</a>
+                <a href="#projetos" class="menu-link">
+                    Projetos
+                </a>
             </li>
             <li>
-                <a href="#contatos" class="menu-link">Contato</a>
+                <a href="#contatos" class="menu-link">
+                    Contato
+                </a>
             </li>
         </ul>
     </nav>
-
     <main id="inicio" class="cabecalho">
-
-        <img src="./img/creept.jpg" alt="Foto de Jadison Silva " class="foto-perfil">
-        <h1>Jadison Silva</h1>
-        <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
-
+        <img
+            src="./img/creept.jpg"
+            alt="Foto de Jadison Silva"
+            class="foto-perfil">
+        <h1>
+            Jadison Silva
+        </h1>
+        <p class="cabecalho-sub-titulo">
+            Desenvolvedor Front End
+        </p>
     </main>
 
     <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo">Sobre mim</h2>
+        <h2 class="sobre-titulo">
+            Sobre mim
+        </h2>
         <div class="sobre-caixa">
             <p class="sobre-paragrafo">
-                Ola! Sou um desenvolvedor front end apaixonado por criar experiencias web unicas e memoraveis. Combino
-                codigo limpo com design moderno para desenvolver sites que não so funcionam perfeitamente, mas tambem
-                impressionam visualmente.
+                Olá! Sou um desenvolvedor front end apaixonado por criar
+                experiências web únicas e memoráveis. Combino código limpo
+                com design moderno para desenvolver sites que não só
+                funcionam perfeitamente, mas também impressionam visualmente.
             </p>
         </div>
     </section>
 
-
     <section id="projetos" class="projetos">
-        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <h2 class="projetos-titulo">
+            Meus Projetos
+        </h2>
         <div class="projetos-caixa">
-
-            <div class="projetos-card">
-                <img src="./img/Flyers.webp" alt="Projeto 1" class="projetos-imagem">
-                <div class="caixa-textos-projetos">
-                    <h3 class="info-projetos">Pagina de viagens</h3>
-                    <p class="paragrafo-projetos">Loja virtual moderno</p>
+            <a
+                href="./Projetos/DevBarber/login.html"
+                target="_blank"
+                class="projeto-link">
+                <div class="projetos-card">
+                    <img
+                        src="./img/Logotipo DevBarber_ Emblema Neon Roxo.png"
+                        alt="Projeto DevBarber"
+                        class="projetos-imagem">
+                    <div class="caixa-textos-projetos">
+                        <h3 class="info-projetos">
+                            DevBarber
+                        </h3>
+                        <p class="paragrafo-projetos">
+                            Sistema de gerenciamento para barbearia
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="projetos-card">
-                <img src="./img/Microsoft.webp" alt="Projeto 1" class="projetos-imagem">
-                <div class="caixa-textos-projetos">
-                    <h3 class="info-projetos">Microsoft</h3>
-                    <p class="paragrafo-projetos">Loja virtual moderno</p>
+            <a
+                href="./Projetos/DevGastos/index.html"
+                target="_blank"
+                class="projeto-link">
+                <div class="projetos-card">
+                    <img
+                        src="./img/Controle de Gastos Fintech.png"
+                        alt="Projeto Controle de Gastos"
+                        class="projetos-imagem">
+
+                    <div class="caixa-textos-projetos">
+                        <h3 class="info-projetos">
+                            DevGastos
+                        </h3>
+                        <p class="paragrafo-projetos">
+                            Sistema para controle financeiro pessoal
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="projetos-card">
-                <img src="./img/transferir.webp" alt="Projeto 1" class="projetos-imagem">
-                <div class="caixa-textos-projetos">
-                    <h3 class="info-projetos">Loja de Carros</h3>
-                    <p class="paragrafo-projetos">Loja virtual moderno</p>
-                </div>
-            </div>
-
+            </a>
         </div>
     </section>
 
-
-
     <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <h2 class="contatos-titulo">
+            Entre em Contato
+        </h2>
 
-        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
-            <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form" id="nome">
-            </div>
-
-            <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="4" id="mensagem"></textarea>
-            </div>
-
-            <button type="submit" class="botao-form"> Enviar Whatsapp</button>
-        </form>
+        <div class="redes">
+            <a
+                href="https://www.tiktok.com/@silvrs.dev7"
+                target="_blank">
+                TikTok
+            </a>
+            <a
+                href="https://github.com/jadsonxyz7"
+                target="_blank">
+                GitHub
+            </a>
+        </div>
     </section>
-    <script>
-
-        function enviarWhats(event) {
-        event.preventDefault()
-
-            const nome = document.getElementById('nome').value;
-            const mensagem = document.getElementById('mensagem').value;
-            const telefone = '5589994418704'
-
-            const texto = ` Olá! me chamo ${nome}, ${mensagem}`
-            const msgFormatada = encodeURIComponent(texto)
-
-            const url = `https://wa.me/${telefone}?text=${msgFormatada}`
-          
-         console.log(url)
-
-            window.open(url, '_blank')
-        }
-
-
-    </script>
 </body>
-
 </html>
