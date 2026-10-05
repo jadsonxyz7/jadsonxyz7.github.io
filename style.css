@@ -244,6 +244,25 @@ margin-bottom: 1.5rem;
     radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
     var(--maisEscuro);
 }
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: var(--claro);
+    background-color: var(--primaria);
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    background-color: var(--secundaria);
+    transform: translateY(-3px);
+}
 
 
 @keyframes flutuar {
