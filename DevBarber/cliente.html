@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevBarber | Área do Cliente</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <a href="index.html" class="logo">
+            DEV<span>BARBER</span>
+        </a>
+
+        <nav class="menu">
+
+            <a href="index.html#inicio">
+                Início
+            </a>
+
+            <a href="index.html#servicos">
+                Serviços
+            </a>
+
+            <a href="index.html#barbeiros">
+                Barbeiros
+            </a>
+
+            <a href="index.html#agendamento">
+                Agendar
+            </a>
+
+        </nav>
+
+        <button
+            id="btnSair"
+            class="botao-header">
+            Sair
+        </button>
+
+    </header>
+
+
+    <!-- ÁREA DO CLIENTE -->
+    <main class="area-cliente">
+
+        <div class="cliente-topo">
+
+            <div>
+
+                <p class="titulo-pequeno">
+                    ÁREA DO CLIENTE
+                </p>
+
+                <h1>
+                    Olá,
+                    <span id="nomeCliente"></span>
+                </h1>
+
+                <p>
+                    Confira seus horários agendados.
+                </p>
+
+            </div>
+
+
+            <a
+                href="index.html#agendamento"
+                class="botao-principal">
+                Novo agendamento
+            </a>
+
+        </div>
+
+
+        <!-- MEUS AGENDAMENTOS -->
+        <section class="meus-agendamentos">
+
+            <div class="titulo-secao">
+
+                <p>
+                    MINHA AGENDA
+                </p>
+
+                <h2>
+                    Meus agendamentos
+                </h2>
+
+            </div>
+
+
+            <div id="listaAgendamentos">
+
+                <!--
+                    Os agendamentos serão
+                    inseridos pelo JavaScript.
+                -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <div>
+
+            <a href="index.html" class="logo">
+                DEV<span>BARBER</span>
+            </a>
+
+            <p>
+                Estilo, precisão e tradição.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 DevBarber. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="cliente.js"></script>
+
+</body>
+
+</html>

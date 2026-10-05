@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevGastos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Controle de Gastos</h1>
+        <p>Organize suas finanças de forma simples</p>
+    </header>
+    <main>
+        <section class="resumo">
+            <div class="card">
+                <h2>Saldo</h2>
+                <p id="saldo">R$ 0,00</p>
+            </div>
+            <div class="card">
+                <h2>Entradas</h2>
+                <p id="entradas">R$ 0,00</p>
+            </div>
+
+            <div class="card">
+                <h2>Saídas</h2>
+                <p id="saidas">R$ 0,00</p>
+            </div>
+        </section>
+
+        <section class="cadastro">
+            <h2>Nova movimentação</h2>
+            <form id="formulario">
+                <input type="text" id="descricao" placeholder="Descrição" required>
+                <input type="number" id="valor" placeholder="Valor" step="0.01" required>
+                <select id="tipo">
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saída</option>
+                </select>
+
+                <button type="submit">
+                    Adicionar
+                </button>
+            </form>
+        </section>
+        <section class="movimentacoes">
+            <h2>Movimentações</h2>
+            <div id="lista">
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

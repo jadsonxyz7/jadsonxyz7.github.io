@@ -1,0 +1,1173 @@
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #11100f;
+    color: #f1e7d0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+.cabecalho {
+    width: 100%;
+    height: 80px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #11100f;
+
+    border-bottom: 1px solid #2a2520;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #f1e7d0;
+}
+
+.logo span {
+    color: #b87333;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu a {
+    color: #a69a89;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #d6a15c;
+}
+
+.botao-header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 145px;
+    height: 42px;
+
+    padding: 0 20px;
+
+    background-color: #b87333;
+    color: #11100f;
+
+    border: none;
+    border-radius: 3px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-header:hover {
+    background-color: #d6a15c;
+}
+
+
+/* ==============================
+   HERO
+============================== */
+
+.hero {
+    min-height: 620px;
+
+    padding: 100px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: #11100f;
+}
+
+.hero-conteudo {
+    max-width: 650px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.hero-subtitulo {
+    margin-bottom: 20px;
+
+    color: #b87333;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    margin-bottom: 25px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 72px;
+    line-height: 1.05;
+
+    font-weight: normal;
+}
+
+.hero h1 span {
+    color: #d6a15c;
+}
+
+.hero-texto {
+    max-width: 520px;
+
+    margin-bottom: 35px;
+
+    color: #a69a89;
+
+    font-size: 17px;
+}
+
+.hero-botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-simbolo {
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #2a2520;
+    border-radius: 50%;
+
+    color: #b87333;
+
+    font-size: 120px;
+
+    opacity: 0.8;
+}
+
+
+/* ==============================
+   BOTÕES
+============================== */
+
+.botao-principal {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 0 28px;
+
+    background-color: #b87333;
+    color: #11100f;
+
+    border: 1px solid #b87333;
+    border-radius: 3px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-principal:hover {
+    background-color: #d6a15c;
+    border-color: #d6a15c;
+}
+
+.botao-secundario {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 0 28px;
+
+    background-color: transparent;
+    color: #f1e7d0;
+
+    border: 1px solid #665a4b;
+    border-radius: 3px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.botao-secundario:hover {
+    border-color: #b87333;
+    color: #d6a15c;
+}
+
+
+/* ==============================
+   SEÇÕES
+============================== */
+
+.secao {
+    width: 100%;
+
+    padding: 100px 8%;
+
+    border-top: 1px solid #2a2520;
+}
+
+.titulo-secao {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.titulo-secao p,
+.titulo-pequeno {
+    margin-bottom: 12px;
+
+    color: #b87333;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+.titulo-secao h2 {
+    color: #f1e7d0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 48px;
+    font-weight: normal;
+}
+
+
+/* ==============================
+   SERVIÇOS
+============================== */
+
+.cards-servicos {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card-servico {
+    min-height: 300px;
+
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #1c1916;
+
+    border: 1px solid #2a2520;
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+.card-servico:hover {
+    border-color: #b87333;
+
+    transform: translateY(-5px);
+}
+
+.icone-servico {
+    margin-bottom: 25px;
+
+    color: #b87333;
+
+    font-size: 32px;
+}
+
+.card-servico h3 {
+    margin-bottom: 12px;
+
+    color: #f1e7d0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+}
+
+.card-servico p {
+    margin-bottom: 30px;
+
+    color: #a69a89;
+
+    font-size: 14px;
+}
+
+.servico-info {
+    margin-top: auto;
+
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid #2a2520;
+}
+
+.servico-info span {
+    color: #a69a89;
+
+    font-size: 13px;
+}
+
+.servico-info strong {
+    color: #d6a15c;
+
+    font-size: 16px;
+}
+
+
+/* ==============================
+   BARBEIROS
+============================== */
+
+.secao-barbeiros {
+    background-color: #151311;
+}
+
+.cards-barbeiros {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card-barbeiro {
+    padding: 35px;
+
+    text-align: center;
+
+    background-color: #1c1916;
+
+    border: 1px solid #2a2520;
+}
+
+.foto-barbeiro {
+    width: 100px;
+    height: 100px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #b87333;
+    border-radius: 50%;
+
+    color: #d6a15c;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 28px;
+}
+
+.card-barbeiro h3 {
+    margin-bottom: 8px;
+
+    color: #f1e7d0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+}
+
+.card-barbeiro p {
+    color: #a69a89;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   AGENDAMENTO
+============================== */
+
+.agendamento {
+    background-color: #11100f;
+}
+
+.agendamento-container {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+.agendamento-info {
+    padding-top: 20px;
+}
+
+.agendamento-info h3 {
+    margin-bottom: 20px;
+
+    color: #f1e7d0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    line-height: 1.2;
+}
+
+.agendamento-info p {
+    margin-bottom: 20px;
+
+    color: #a69a89;
+
+    font-size: 15px;
+}
+
+.agendamento-info .botao-secundario {
+    margin-top: 15px;
+}
+
+#formAgendamento {
+    padding: 35px;
+
+    background-color: #1c1916;
+
+    border: 1px solid #2a2520;
+    border-radius: 4px;
+}
+
+.campo {
+    margin-bottom: 22px;
+}
+
+.campo label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #f1e7d0;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 15px;
+
+    background-color: #11100f;
+    color: #f1e7d0;
+
+    border: 1px solid #40382f;
+    border-radius: 3px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-color: #b87333;
+}
+
+.campo select option {
+    background-color: #1c1916;
+    color: #f1e7d0;
+}
+
+#formAgendamento .botao-principal {
+    width: 100%;
+}
+
+#mensagemAgendamento {
+    min-height: 25px;
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   CLIENTE NO AGENDAMENTO
+============================== */
+
+.cliente-agendamento {
+    margin-bottom: 25px;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+
+    background-color: #2a2520;
+
+    border-left: 3px solid #b87333;
+}
+
+.cliente-agendamento strong {
+    color: #f1e7d0;
+
+    font-size: 15px;
+}
+
+.cliente-agendamento span {
+    color: #a69a89;
+
+    font-size: 13px;
+}
+
+
+/* ==============================
+   SOBRE
+============================== */
+
+.sobre {
+    background-color: #151311;
+}
+
+.sobre-conteudo {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.sobre-conteudo h2 {
+    color: #f1e7d0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+
+    font-weight: normal;
+
+    line-height: 1.2;
+}
+
+.sobre-conteudo > p {
+    color: #a69a89;
+
+    font-size: 16px;
+}
+
+
+/* ==============================
+   LOGIN E CADASTRO
+============================== */
+
+.login {
+    min-height: calc(100vh - 80px);
+
+    padding: 80px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #11100f;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 480px;
+
+    padding: 45px;
+
+    background-color: #1c1916;
+
+    border: 1px solid #2a2520;
+    border-radius: 4px;
+}
+
+.login-titulo {
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+.login-titulo h1 {
+    margin-bottom: 15px;
+
+    color: #f1e7d0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 38px;
+    font-weight: normal;
+
+    line-height: 1.2;
+}
+
+.login-titulo h1 span {
+    color: #b87333;
+}
+
+.login-titulo > p:last-child {
+    color: #a69a89;
+
+    font-size: 14px;
+}
+
+#formLogin,
+#formCadastro {
+    width: 100%;
+}
+
+#formLogin .botao-principal,
+#formCadastro .botao-principal {
+    width: 100%;
+}
+
+.login-cadastro {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    text-align: center;
+
+    border-top: 1px solid #2a2520;
+}
+
+.login-cadastro p {
+    margin-bottom: 8px;
+
+    color: #a69a89;
+
+    font-size: 13px;
+}
+
+.login-cadastro a {
+    color: #d6a15c;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-cadastro a:hover {
+    color: #b87333;
+}
+
+#mensagemLogin,
+#mensagemCadastro {
+    min-height: 25px;
+
+    margin-top: 18px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   ÁREA DO CLIENTE
+============================== */
+
+.area-cliente {
+    min-height: calc(100vh - 80px);
+
+    padding: 80px 8%;
+
+    background-color: #11100f;
+}
+
+.cliente-topo {
+    max-width: 1200px;
+
+    margin: 0 auto 70px;
+
+    padding-bottom: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #2a2520;
+}
+
+.cliente-topo h1 {
+    margin-bottom: 8px;
+
+    color: #f1e7d0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 46px;
+    font-weight: normal;
+}
+
+.cliente-topo h1 span {
+    color: #b87333;
+}
+
+.cliente-topo p:last-child {
+    color: #a69a89;
+
+    font-size: 14px;
+}
+
+.meus-agendamentos {
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.meus-agendamentos .titulo-secao {
+    text-align: left;
+
+    margin-bottom: 35px;
+}
+
+.meus-agendamentos .titulo-secao h2 {
+    font-size: 38px;
+}
+
+
+/* ==============================
+   LISTA DE AGENDAMENTOS
+============================== */
+
+#listaAgendamentos {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.agendamento-card {
+    padding: 25px;
+
+    display: grid;
+
+    grid-template-columns: 150px 1fr auto;
+
+    gap: 30px;
+
+    align-items: center;
+
+    background-color: #1c1916;
+
+    border: 1px solid #2a2520;
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+.agendamento-card:hover {
+    border-color: #665a4b;
+}
+
+.agendamento-data {
+    padding-right: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-right: 1px solid #2a2520;
+}
+
+.agendamento-data span {
+    color: #d6a15c;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.agendamento-data strong {
+    margin-top: 5px;
+
+    color: #f1e7d0;
+
+    font-size: 25px;
+}
+
+.agendamento-detalhes h3 {
+    margin-bottom: 8px;
+
+    color: #f1e7d0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+}
+
+.agendamento-detalhes p {
+    color: #a69a89;
+
+    font-size: 14px;
+}
+
+.status-agendamento {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 5px 12px;
+
+    background-color: #2a2520;
+
+    color: #d6a15c;
+
+    border-radius: 3px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botao-cancelar {
+    min-width: 100px;
+
+    padding: 10px 18px;
+
+    background-color: transparent;
+
+    color: #c96b5c;
+
+    border: 1px solid #69443e;
+    border-radius: 3px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.botao-cancelar:hover {
+    background-color: #69443e;
+    color: #f1e7d0;
+}
+
+.sem-agendamentos {
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background-color: #1c1916;
+
+    border: 1px solid #2a2520;
+}
+
+.sem-agendamentos h3 {
+    margin-bottom: 10px;
+
+    color: #f1e7d0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+}
+
+.sem-agendamentos p {
+    margin-bottom: 25px;
+
+    color: #a69a89;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+.rodape {
+    padding: 50px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #0c0b0a;
+
+    border-top: 1px solid #2a2520;
+}
+
+.rodape .logo {
+    display: inline-block;
+
+    margin-bottom: 8px;
+}
+
+.rodape p {
+    color: #756c60;
+
+    font-size: 13px;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+
+@media (max-width: 900px) {
+
+    .cabecalho {
+        padding: 0 5%;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 80px 7%;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero-simbolo {
+        width: 220px;
+        height: 220px;
+
+        font-size: 80px;
+    }
+
+    .cards-servicos,
+    .cards-barbeiros {
+        grid-template-columns: 1fr;
+    }
+
+    .agendamento-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .sobre-conteudo {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .agendamento-card {
+        grid-template-columns: 120px 1fr;
+    }
+
+    .botao-cancelar {
+        grid-column: 2;
+
+        justify-self: start;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .cabecalho {
+        height: auto;
+
+        padding: 20px;
+
+        flex-wrap: wrap;
+
+        gap: 20px;
+    }
+
+    .menu {
+        width: 100%;
+
+        order: 3;
+
+        justify-content: center;
+
+        gap: 18px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .botao-header {
+        min-width: auto;
+
+        padding: 0 15px;
+    }
+
+    .hero {
+        min-height: 600px;
+
+        padding: 70px 25px;
+
+        text-align: center;
+    }
+
+    .hero-conteudo {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-texto {
+        font-size: 15px;
+    }
+
+    .hero-botoes {
+        justify-content: center;
+
+        flex-direction: column;
+    }
+
+    .hero-simbolo {
+        display: none;
+    }
+
+    .secao {
+        padding: 70px 20px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 38px;
+    }
+
+    #formAgendamento {
+        padding: 25px 20px;
+    }
+
+    .login-container {
+        padding: 30px 20px;
+    }
+
+    .cliente-topo {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .cliente-topo h1 {
+        font-size: 38px;
+    }
+
+    .agendamento-card {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .agendamento-data {
+        padding-right: 0;
+        padding-bottom: 15px;
+
+        border-right: none;
+        border-bottom: 1px solid #2a2520;
+    }
+
+    .botao-cancelar {
+        grid-column: auto;
+
+        width: 100%;
+    }
+
+    .rodape {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+}

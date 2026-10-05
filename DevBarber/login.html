@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevBarber | Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <a href="index.html" class="logo">
+            DEV<span>BARBER</span>
+        </a>
+
+        <a
+            href="index.html"
+            class="botao-header">
+            Voltar
+        </a>
+
+    </header>
+
+
+    <!-- LOGIN -->
+    <main class="login">
+
+        <div class="login-container">
+
+            <div class="login-titulo">
+
+                <p class="titulo-pequeno">
+                    ÁREA DO CLIENTE
+                </p>
+
+                <h1>
+                    Bem-vindo à
+                    <span>DevBarber</span>
+                </h1>
+
+                <p>
+                    Entre na sua conta para agendar
+                    seu próximo horário.
+                </p>
+
+            </div>
+
+
+            <form id="formLogin">
+
+                <!-- E-MAIL -->
+                <div class="campo">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                        autocomplete="off"  
+                    >
+
+                </div>
+
+
+                <!-- SENHA -->
+                <div class="campo">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- BOTÃO -->
+                <button
+                    type="submit"
+                    class="botao-principal">
+                    Entrar
+                </button>
+
+
+                <!-- MENSAGEM -->
+                <div id="mensagemLogin"></div>
+
+            </form>
+
+
+            <!-- CADASTRO -->
+            <div class="login-cadastro">
+
+                <p>
+                    Ainda não possui uma conta?
+                </p>
+
+                <a href="cadastro.html">
+                    Criar minha conta
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <div>
+
+            <a href="index.html" class="logo">
+                DEV<span>BARBER</span>
+            </a>
+
+            <p>
+                Estilo, precisão e tradição.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 DevBarber. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevBarber | Barbearia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <a href="index.html" class="logo">
+            DEV<span>BARBER</span>
+        </a>
+
+        <nav class="menu">
+
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#barbeiros">Barbeiros</a>
+            <a href="#agendamento">Agendamento</a>
+
+        </nav>
+
+        <a href="login.html" class="botao-header">
+            Área do cliente
+        </a>
+
+    </header>
+
+
+    <!-- INÍCIO -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-conteudo">
+
+            <p class="hero-subtitulo">
+                ESTILO • PRECISÃO • TRADIÇÃO
+            </p>
+
+            <h1>
+                Seu estilo.<br>
+                <span>Nosso trabalho.</span>
+            </h1>
+
+            <p class="hero-texto">
+                Cortes clássicos, degradês e barba feitos
+                por profissionais que entendem de estilo.
+            </p>
+
+            <div class="hero-botoes">
+
+                <a href="#agendamento" class="botao-principal">
+                    Agendar horário
+                </a>
+
+                <a href="#servicos" class="botao-secundario">
+                    Ver serviços
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-simbolo">
+            ✂
+        </div>
+
+    </section>
+
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="secao">
+
+        <div class="titulo-secao">
+
+            <p>SERVIÇOS</p>
+
+            <h2>
+                Escolha seu estilo
+            </h2>
+
+        </div>
+
+
+        <div class="cards-servicos">
+
+            <div class="card-servico">
+
+                <div class="icone-servico">
+                    ✂
+                </div>
+
+                <h3>
+                    Corte Masculino
+                </h3>
+
+                <p>
+                    Corte personalizado de acordo
+                    com seu estilo.
+                </p>
+
+                <div class="servico-info">
+                    <span>30 min</span>
+                    <strong>R$ 30,00</strong>
+                </div>
+
+            </div>
+
+
+            <div class="card-servico">
+
+                <div class="icone-servico">
+                    🪒
+                </div>
+
+                <h3>
+                    Barba
+                </h3>
+
+                <p>
+                    Barba alinhada com acabamento
+                    profissional.
+                </p>
+
+                <div class="servico-info">
+                    <span>20 min</span>
+                    <strong>R$ 20,00</strong>
+                </div>
+
+            </div>
+
+
+            <div class="card-servico">
+
+                <div class="icone-servico">
+                    ✂
+                </div>
+
+                <h3>
+                    Corte + Barba
+                </h3>
+
+                <p>
+                    O combo completo para renovar
+                    seu visual.
+                </p>
+
+                <div class="servico-info">
+                    <span>50 min</span>
+                    <strong>R$ 45,00</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BARBEIROS -->
+    <section id="barbeiros" class="secao secao-barbeiros">
+
+        <div class="titulo-secao">
+
+            <p>NOSSA EQUIPE</p>
+
+            <h2>
+                Profissionais
+            </h2>
+
+        </div>
+
+
+        <div class="cards-barbeiros">
+
+            <div class="card-barbeiro">
+
+                <div class="foto-barbeiro">
+                    JS
+                </div>
+
+                <h3>
+                    João Silva
+                </h3>
+
+                <p>
+                    Especialista em cortes clássicos
+                </p>
+
+            </div>
+
+
+            <div class="card-barbeiro">
+
+                <div class="foto-barbeiro">
+                    MC
+                </div>
+
+                <h3>
+                    Marcos Costa
+                </h3>
+
+                <p>
+                    Especialista em degradê
+                </p>
+
+            </div>
+
+
+            <div class="card-barbeiro">
+
+                <div class="foto-barbeiro">
+                    RA
+                </div>
+
+                <h3>
+                    Rafael Alves
+                </h3>
+
+                <p>
+                    Especialista em barba
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AGENDAMENTO -->
+    <section id="agendamento" class="secao agendamento">
+
+        <div class="titulo-secao">
+
+            <p>AGENDAMENTO</p>
+
+            <h2>
+                Reserve seu horário
+            </h2>
+
+        </div>
+
+
+        <div class="agendamento-container">
+
+            <div class="agendamento-info">
+
+                <h3>
+                    Seu próximo corte começa aqui.
+                </h3>
+
+                <p>
+                    Escolha o serviço, o barbeiro,
+                    a data e o horário que deseja.
+                </p>
+
+                <p>
+                    Para realizar um agendamento,
+                    entre na sua conta de cliente.
+                </p>
+
+                <a href="login.html" class="botao-secundario">
+                    Entrar na conta
+                </a>
+
+            </div>
+
+
+            <form id="formAgendamento">
+
+                <!-- CLIENTE LOGADO -->
+                <div
+                    id="clienteAgendamento"
+                    class="cliente-agendamento">
+                </div>
+
+
+                <!-- SERVIÇO -->
+                <div class="campo">
+
+                    <label for="servico">
+                        Serviço
+                    </label>
+
+                    <select id="servico" required>
+
+                        <option value="">
+                            Selecione um serviço
+                        </option>
+
+                        <option value="Corte Masculino">
+                            Corte Masculino - R$ 30,00
+                        </option>
+
+                        <option value="Barba">
+                            Barba - R$ 20,00
+                        </option>
+
+                        <option value="Corte + Barba">
+                            Corte + Barba - R$ 45,00
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- BARBEIRO -->
+                <div class="campo">
+
+                    <label for="barbeiro">
+                        Barbeiro
+                    </label>
+
+                    <select id="barbeiro" required>
+
+                        <option value="">
+                            Selecione um barbeiro
+                        </option>
+
+                        <option value="João Silva">
+                            João Silva
+                        </option>
+
+                        <option value="Marcos Costa">
+                            Marcos Costa
+                        </option>
+
+                        <option value="Rafael Alves">
+                            Rafael Alves
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- DATA -->
+                <div class="campo">
+
+                    <label for="data">
+                        Data
+                    </label>
+
+                    <input
+                        type="date"
+                        id="data"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- HORÁRIO -->
+                <div class="campo">
+
+                    <label for="horario">
+                        Horário
+                    </label>
+
+                    <select id="horario" required>
+
+                        <option value="">
+                            Selecione um horário
+                        </option>
+
+                        <option value="08:00">
+                            08:00
+                        </option>
+
+                        <option value="09:00">
+                            09:00
+                        </option>
+
+                        <option value="10:00">
+                            10:00
+                        </option>
+
+                        <option value="11:00">
+                            11:00
+                        </option>
+
+                        <option value="13:00">
+                            13:00
+                        </option>
+
+                        <option value="14:00">
+                            14:00
+                        </option>
+
+                        <option value="15:00">
+                            15:00
+                        </option>
+
+                        <option value="16:00">
+                            16:00
+                        </option>
+
+                        <option value="17:00">
+                            17:00
+                        </option>
+
+                        <option value="18:00">
+                            18:00
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="botao-principal">
+                    Confirmar agendamento
+                </button>
+
+
+                <div id="mensagemAgendamento"></div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOBRE -->
+    <section class="secao sobre">
+
+        <div class="sobre-conteudo">
+
+            <div>
+
+                <p class="titulo-pequeno">
+                    SOBRE A DEV BARBER
+                </p>
+
+                <h2>
+                    Tradição no corte.<br>
+                    Tecnologia no atendimento.
+                </h2>
+
+            </div>
+
+            <p>
+                A DevBarber une a experiência de uma
+                barbearia tradicional com uma experiência
+                digital simples para seus clientes.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <div>
+
+            <a href="index.html" class="logo">
+                DEV<span>BARBER</span>
+            </a>
+
+            <p>
+                Estilo, precisão e tradição.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 DevBarber. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

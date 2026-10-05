@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBarber | Criar conta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                DEV<span>BARBER</span>
+            </a>
+
+            <a href="login.html" class="botao-header">
+                Entrar
+            </a>
+        </nav>
+    </header>
+
+    <main class="login">
+
+        <div class="login-container">
+
+            <div class="login-titulo">
+
+                <p class="subtitulo">
+                    ÁREA DO CLIENTE
+                </p>
+
+                <h1>
+                    Crie sua
+                    <span>conta</span>
+                </h1>
+
+                <p>
+                    Cadastre seus dados para acompanhar seus
+                    agendamentos na DevBarber.
+                </p>
+
+            </div>
+
+            <form id="formCadastro">
+
+                <div class="campo">
+
+                    <label for="nome">
+                        Nome completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="telefone">
+                        Telefone
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefone"
+                        placeholder="(00) 00000-0000"
+                        required
+                    >
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        placeholder="Crie uma senha"
+                        required
+                    >
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="confirmarSenha">
+                        Confirmar senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmarSenha"
+                        placeholder="Digite a senha novamente"
+                        required
+                    >
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="botao-agendar"
+                >
+                    Criar minha conta
+                </button>
+
+                <div id="mensagemCadastro"></div>
+
+            </form>
+
+            <div class="login-cadastro">
+
+                <p>
+                    Já possui uma conta?
+                </p>
+
+                <a href="login.html">
+                    Fazer login
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="cadastro.js"></script>
+
+</body>
+</html>
